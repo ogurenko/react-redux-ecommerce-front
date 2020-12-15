@@ -1,0 +1,12 @@
+diff --git a/node_modules/react-responsive-carousel/lib/styles/carousel.css b/node_modules/react-responsive-carousel/lib/styles/carousel.css
+index 2394d7f..23cefb4 100644
+--- a/node_modules/react-responsive-carousel/lib/styles/carousel.css
++++ b/node_modules/react-responsive-carousel/lib/styles/carousel.css
+@@ -161,7 +161,6 @@
+       -o-transition: all 0.35s ease-in-out;
+       transition: all 0.35s ease-in-out; }
+   .carousel .slide {
+-    min-width: 100%;
+     margin: 0;
+     position: relative;
+     text-align: center;

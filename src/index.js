@@ -1,14 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import * as serviceWorker from "./serviceWorker";
+import "antd/dist/antd.css";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import rootReducer from './reducers'
+/* create a store
+ that store needs reducer --> a function that 
+is actually update the state
+ --> rootReducer function */
+
+const store = createStore(rootReducer, composeWithDevTools())
+// we provide that store to our application
+// to access our components, for that we have a Provider
+
+// We have to pass the store to the provider
+// this way we pass the redux store using Provider
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  //  <React.StrictMode>
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
+  // </React.StrictMode>
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
