@@ -91,7 +91,7 @@ const StripeCheckout = ({ history }) => {
         }
       });
 
-      console.log(JSON.stringify(payload, null, 4));
+      // console.log(JSON.stringify(payload, null, 4));
       setError(null);
       setProcessing(false);
       setSucceeded(true);
