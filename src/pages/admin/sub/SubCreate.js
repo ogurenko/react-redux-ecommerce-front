@@ -115,7 +115,7 @@ const SubCreate = () => {
                 })}
             </select>
           </div>
-          {JSON.stringify(parentcat)}
+          {/* {JSON.stringify(parentcat)} */}
 
           <CategoryForm
             handleSubmit={handleSubmit}

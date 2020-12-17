@@ -95,9 +95,9 @@ const ProductCreate = () => {
 
           {/* {JSON.stringify(values)} */}
 
-          {JSON.stringify(values.subs)}
+          {/* {JSON.stringify(values.subs)} */}
 
-          {JSON.stringify(values.images)}
+          {/* {JSON.stringify(values.images)} */}
 
           <div className="p-3">
             <FileUpload
