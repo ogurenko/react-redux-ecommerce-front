@@ -66,7 +66,6 @@ const Shop = () => {
 
   const loadAllProducts = () => {
     getProductsByCount(12).then((p) => {
-      setLoading(true);
       setProducts(p.data);
       setLoading(false);
     });

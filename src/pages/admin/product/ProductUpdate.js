@@ -37,7 +37,7 @@ const ProductUpdate = ({ match, history }) => {
   const [categories, setCategories] = useState([]);
   const [arrayOfSubIds, setArrayOfSubIds] = useState([]);
 
-  const [selectedCategory, setSelectedCategory] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

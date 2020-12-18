@@ -11,31 +11,26 @@ const NewArrivals = () => {
   const [page, setPage] = useState(1);
   const [productsCount, setProductsCount] = useState(0);
 
-
-
   useEffect(() => {
     loadAllProducts();
   }, [page]);
 
   useEffect(() => {
     getProductsCount().then((res) => setProductsCount(res.data));
-  },[]);
+  }, []);
 
-  
-   const loadAllProducts = () => {
-     setLoading(true);
+  const loadAllProducts = () => {
+    setLoading(true);
 
-     getProducts("createdAt", "desc", page).then((res) => {
-       setProducts(res.data);
-       setLoading(false);
-     });
-   };
-
- 
+    getProducts("createdAt", "desc", page).then((res) => {
+      setProducts(res.data);
+      setLoading(false);
+    });
+  };
 
   return (
     <>
-      {productsCount}
+      {/* {productsCount} */}
       <div className="container">
         {/* {JSON.stringify(products)} */}
         {loading ? (

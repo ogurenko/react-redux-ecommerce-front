@@ -36,7 +36,7 @@ const SubHome = ({ match }) => {
       <div className="row">
         {products.map((product) => {
           return (
-            <div className="col-4" key="product._id">
+            <div className="col-4" key={product._id}>
               <ProductCard product={product} />
             </div>
           );

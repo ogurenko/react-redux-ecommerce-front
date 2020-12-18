@@ -165,7 +165,6 @@ const StripeCheckout = ({ history }) => {
           <Link to="/user/history">See it in your purchase history</Link>
         </p>
       </form>
-      )
     </>
   );
 };
